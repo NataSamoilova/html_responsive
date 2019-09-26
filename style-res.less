@@ -40,6 +40,16 @@ ul {
   }
 }
 
+.header{
+  .img-block{
+    img{
+      width: 470px;
+      height: 230px;
+      background-image: url(img/car.jpg);
+    }
+  }
+}
+
 .img-block {
   text-align: center;
 }
@@ -70,11 +80,27 @@ main h3 {
     }
   }
 
-  .header {
+  h1,
+  ul {
+    text-align: center;
+  }
+}
 
-    h1,
-    ul {
-      text-align: center;
+@media screen and (max-width: 550px) {
+  .header{
+    .img-block{
+      img{
+        width: 99%;
+        height: 150px;
+      }
+    }
+  }
+  .about-wrapper{
+    .img-block{
+      img{
+        width: 99%;
+        height: 200px;
+      }
     }
   }
 }
@@ -171,42 +197,50 @@ main h3 {
   }
 }
 
-@media (max-width: 479px){
+@media (max-width: 479px) {
+
   .review-block,
   .quality-section,
-  .screenshot-block{
+  .screenshot-block {
     flex-direction: column;
     text-align: center;
-    img{
+
+    img {
       margin-bottom: 20px;
     }
-    p{
+
+    p {
       text-align: left;
     }
   }
-  .review-block{
+
+  .review-block {
     .section-review::before {
       background: #ebebeb;
       top: -10px;
       left: 48%;
     }
-    .review-img{
+
+    .review-img {
       margin: 0;
     }
   }
-  .quality-section{
-    .img-plus{
+
+  .quality-section {
+    .img-plus {
       margin: 0 auto 10px;
     }
   }
-  .quality-wrapper{
-    .row{
-      .col-md-6:first-child{
-        .img-plus{
+
+  .quality-wrapper {
+    .row {
+      .col-md-6:first-child {
+        .img-plus {
           display: none;
         }
       }
-      p{
+
+      p {
         margin: 0;
       }
     }
@@ -386,17 +420,21 @@ main h3 {
   .contacts-wrapper {
     display: block;
     text-align: center;
+
     .form-area {
       text-align: center;
       margin: 0;
+
       .button {
         margin: 0 auto 20px;
       }
+
       input,
-      textarea{
+      textarea {
         width: 90%;
       }
     }
+
     .contacts-area {
       text-align: center;
     }

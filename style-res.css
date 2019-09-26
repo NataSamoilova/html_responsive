@@ -32,6 +32,11 @@ ul li {
 ul li img {
   margin-right: 10px;
 }
+.header .img-block img {
+  width: 470px;
+  height: 230px;
+  background-image: url(img/car.jpg);
+}
 .img-block {
   text-align: center;
 }
@@ -52,9 +57,19 @@ main h3 {
   .about-wrapper p {
     text-align: center;
   }
-  .header h1,
-  .header ul {
+  h1,
+  ul {
     text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header .img-block img {
+    width: 99%;
+    height: 150px;
+  }
+  .about-wrapper .img-block img {
+    width: 99%;
+    height: 200px;
   }
 }
 .h2-center {

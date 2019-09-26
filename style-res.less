@@ -7,6 +7,22 @@ footer {
   background-color: #445162;
 }
 
+header {
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  a:hover{
+    color: #a8a2a2;
+    text-decoration: none;
+  }
+  a:active{
+    border: none;
+    color: #a8a2a2;
+    text-decoration: none;
+  }
+}
+
 header h1,
 footer h1,
 header h2,
@@ -40,9 +56,9 @@ ul {
   }
 }
 
-.header{
-  .img-block{
-    img{
+.header {
+  .img-block {
+    img {
       width: 470px;
       height: 230px;
       background-image: url(img/car.jpg);
@@ -69,11 +85,14 @@ main h3 {
   .about-wrapper p {
     font-size: 16px;
   }
+
+  video {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 752px) {
   .about-wrapper {
-
     h2,
     p {
       text-align: center;
@@ -87,19 +106,19 @@ main h3 {
 }
 
 @media screen and (max-width: 550px) {
-  .header{
-    .img-block{
-      img{
+  .header {
+    .img-block {
+      img {
         width: 99%;
         height: 150px;
       }
     }
   }
-  .about-wrapper{
-    .img-block{
-      img{
+
+  .about-wrapper {
+    .img-block {
+      video {
         width: 99%;
-        height: 200px;
       }
     }
   }

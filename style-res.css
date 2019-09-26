@@ -5,6 +5,19 @@ header,
 footer {
   background-color: #445162;
 }
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header a:hover {
+  color: #a8a2a2;
+  text-decoration: none;
+}
+header a:active {
+  border: none;
+  color: #a8a2a2;
+  text-decoration: none;
+}
 header h1,
 footer h1,
 header h2,
@@ -52,6 +65,9 @@ main h3 {
 .about-wrapper .about-wrapper p {
   font-size: 16px;
 }
+.about-wrapper video {
+  width: 80%;
+}
 @media screen and (max-width: 752px) {
   .about-wrapper h2,
   .about-wrapper p {
@@ -67,9 +83,8 @@ main h3 {
     width: 99%;
     height: 150px;
   }
-  .about-wrapper .img-block img {
+  .about-wrapper .img-block video {
     width: 99%;
-    height: 200px;
   }
 }
 .h2-center {
